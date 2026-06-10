@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Lift | Projects
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/common.css">
+
+    <link
+        rel="stylesheet"
+        href="../css/header.css">
+
+    <link
+        rel="stylesheet"
+        href="../css/projects.css">
+
+    <link
+        rel="stylesheet"
+        href="../css/footer.css">
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <main>
+
+        <section class="projects-hero">
+
+            <div class="container">
+
+                <h1>
+                    Your Projects
+                </h1>
+
+                <p>
+                    Build real projects,
+                    get AI assistance,
+                    and track your progress.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="projects-section">
+
+            <div class="container">
+
+                <div class="projects-header">
+
+                    <h2>
+                        Projects
+                    </h2>
+
+                    <button
+                        id="createProjectBtn">
+
+                        +
+
+                    </button>
+
+                </div>
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    id="emptyProjects">
+
+                    <h3>
+                        No Projects Yet
+                    </h3>
+
+                    <p>
+                        Create your first project
+                        to get started.
+                    </p>
+
+                    <button
+                        class="create-btn">
+
+                        Create Project
+
+                    </button>
+
+                </div>
+
+                <!-- PROJECT CARDS -->
+
+                <div
+                    id="projectsGrid">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div
+            id="projectModal"
+            class="modal">
+
+            <div
+                class="modal-content">
+
+                <h2>
+                    Create Project
+                </h2>
+
+                <input
+                    id="projectName"
+                    type="text"
+                    placeholder="Project Name">
+
+                <select
+                    id="projectCategory">
+
+                    <option>
+                        Web Development
+                    </option>
+
+                    <option>
+                        Graphic Designing
+                    </option>
+
+                    <option>
+                        Digital Marketing
+                    </option>
+
+                    <option>
+                        Dropshipping
+                    </option>
+
+                    <option>
+                        AI Automation
+                    </option>
+
+                </select>
+
+                <div
+                    class="modal-actions">
+
+                    <button
+                        id="cancelProject">
+
+                        Cancel
+
+                    </button>
+
+                    <button
+                        id="saveProject">
+
+                        Create
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <section
+            id="projectWorkspace">
+
+            <div class="container">
+
+                <div
+                    class="workspace-header">
+
+                    <h2
+                        id="workspaceTitle">
+
+                        Project Name
+
+                    </h2>
+
+                    <span
+                        id="workspaceCategory">
+
+                        Category
+
+                    </span>
+
+                </div>
+
+                <div
+                    class="workspace-info">
+
+                    <div>
+
+                        <strong>
+                            Status:
+                        </strong>
+
+                        In Progress
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="webDevWorkspace">
+
+                    <h3>
+                        Web Development Workspace
+                    </h3>
+
+                    <p>
+                        Code editor coming with backend.
+                    </p>
+
+                </div>
+
+                <div
+                    id="otherWorkspace">
+
+                    <h3>
+                        VS Code Extension
+                    </h3>
+
+                    <p>
+
+                        This project type uses
+                        the Lift VS Code Extension.
+
+                    </p>
+
+                </div>
+
+                <div
+                    class="project-ai">
+
+                    <h3>
+                        Project AI Assistant
+                    </h3>
+
+                    <div
+                        id="chatMessages">
+
+                        <div
+                            class="ai-message">
+
+                            👋 Tell me about
+                            your project.
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="chat-input">
+
+                        <textarea
+                            id="questionInput"
+                            placeholder="Ask about your project..."></textarea>
+
+                        <button
+                            id="sendQuestion">
+
+                            Send
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/projects.js"></script>
+
+</body>
+
+</html>
