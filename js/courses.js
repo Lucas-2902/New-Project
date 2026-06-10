@@ -23,14 +23,7 @@ async function loadComponents() {
     initializePage();
 }
 
-loadComponents();
-
 function initializePage() {
-
-    const signupSection =
-        document.getElementById(
-            "signup-section"
-        );
 
     const actionButtons =
         document.querySelectorAll(
@@ -97,3 +90,5 @@ function initializePage() {
     }
 
 }
+
+loadComponents();
