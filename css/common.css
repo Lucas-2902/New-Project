@@ -1,0 +1,49 @@
+/* Common Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+:root{
+    --bg:#000000;
+    --card:#0a0a0a;
+    --text:#ffffff;
+    --muted:#8c8c8c;
+    --purple:#6d28d9;
+    --purple-hover:#7c3aed;
+    --border:#1a1a1a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,Segoe UI,sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:min(1280px,92%);
+    margin:auto;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
