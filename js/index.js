@@ -127,7 +127,7 @@ function initializePage() {
             location.reload();
 
         }
-    );
+    );u
 }
 
 document.getElementById("startLearningBtn").addEventListener("click", () => {
@@ -137,7 +137,5 @@ document.getElementById("startLearningBtn").addEventListener("click", () => {
 });
 
 document.getElementById("exploreCoursesBtn").addEventListener("click", () => {
-    document.getElementById("courses-section").scrollIntoView({
-        behavior: "smooth"
-    });
+    window.location.href="courses.html"
 });
