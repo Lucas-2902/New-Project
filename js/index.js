@@ -129,3 +129,15 @@ function initializePage() {
         }
     );
 }
+
+document.getElementById("startLearningBtn").addEventListener("click", () => {
+    document.getElementById("courses-section").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("exploreCoursesBtn").addEventListener("click", () => {
+    document.getElementById("courses-section").scrollIntoView({
+        behavior: "smooth"
+    });
+});
